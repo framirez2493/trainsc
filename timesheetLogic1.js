@@ -24,14 +24,16 @@ var config = {
   var currentTime = moment();
 var hora = moment(currentTime).format("HH:mm A");
 $(".jumbotron").append('Current Time' + " " + hora);
+//$(document).ready(function () {
+//  $('#train-table').delay(10000).load('page.firebase');
+//});
 //reload on minute basis to update time till next train
-function relod() {
-  location.reload();
+function relod() {location.reload();
 }
 
 window.setInterval(function () {
-  /// call your function here
-  relod();
+  // call your function here
+relod();
 }, 60000);
   
   // 2. Button for adding Employees
